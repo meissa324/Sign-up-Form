@@ -32,6 +32,30 @@ img {
     max-height: 100%;
   }
 
+form{
+    width: 100%;
+    height: auto;
+}
+fieldset{
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    height: auto;
+    width: 30%;
+    padding-left: 0;
+}
+
+.input-container-row{
+    width: 100%;
+}
+li{
+    width: 100%;
+}
+input,label{
+    width: 100%;
+}
 /*? flexbox */
 
 body{
@@ -45,4 +69,15 @@ body{
     justify-content: center;
     margin-top: 50%;
 }
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;/* your better off spreading them evenly with justify content*/
+}
 
+.input-container-row{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}

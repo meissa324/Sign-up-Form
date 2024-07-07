@@ -18,28 +18,50 @@
         <p>This is not a real online service! You know you need something like this in your life to help your realize your deepest dreams. Sign up now to get started </p>
         <p>you know you want to</p>
 
-        <form action="" method="post">
+        <form ><!--  action="" method="post" -->
             
             <fieldset>
+                <p>Let's do this!</p>
+                <div class="input-container-row">
 
-                <label for="user_firstN">FIRST NAME</label>
-                <input type="text" name="user_firstN" id="user_firstN">
+                    <ul class="inputsLeft-column">
+                        <li>
+                            <label for="user_firstN">FIRST NAME</label>
+                            <input type="text" name="user_firstN" id="user_firstN">
+                            
+                        </li>
     
-                <label for="user_lastN">LAST NAME</label>
-                <input type="text" name="user_lastN" id="user_lastN">
+                        
+                        <li>
+                            <label for="user_email">EMAIL</label>
+                            <input type="email" name="user_email" id="user_email">
+                        </li>
+                        
+                        
+                        <li>
+                            <label for="user_pass">PASSWORD</label>
+                            <input type="password" name="user_pass" id="user_pass">
+                        </li>
+                        
+                    </ul>
+                    
+                    <ul class="inputsRight-column">
+                        <li>
+                            <label for="user_lastN">LAST NAME</label>
+                            <input type="text" name="user_lastN" id="user_lastN">
+                        </li>
     
-                <label for="user_email">EMAIL</label>
-                <input type="email" name="user_email" id="user_email">
-    
-                <label for="user_phone">PHONE NUMBER</label>
-                <input type="tel" name="user_phone" id="user_phone">
-    
-                <label for="user_pass">PASSWORD</label>
-                <input type="password" name="user_pass" id="user_pass">
-    
-                <label for="user_passCon">PASSWORD</label>
-                <input type="password" name="user_passCon" id="user_passCon">
-
+                        <li>
+                            <label for="user_phone">PHONE NUMBER</label>
+                            <input type="tel" name="user_phone" id="user_phone">
+                        </li>
+                        
+                        <li>
+                            <label for="user_passCon">CONFIRM PASSWORD</label>
+                            <input type="password" name="user_passCon" id="user_passCon">
+                        </li>
+                    </ul>
+                </div>
             </fieldset>
 
             <button type="submit"> Create Account </button>

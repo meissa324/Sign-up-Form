@@ -20,9 +20,10 @@ body{
     border: 0.5rem solid red;
 }
 .pageRight-column{
-    width: auto;
+    width: 60%;
     height: 100%;
     border: 0.5rem solid blue;
+    background-color: #F5F7F8;
 }
 .pageLeft-column{
     width: 40%;
@@ -52,15 +53,20 @@ img{
     margin: 0;
     font-family: 'Norse Bold', Times, serif;
     line-height: 1;
+    color: white;
 }
 
 
 form{
     width: 100%;
     height: auto;
+    
 }
 fieldset{
     width: 100%;
+    background: white;
+    border: none;
+    box-shadow: 3px 3px 7px #B4B4B8;
 }
 
 ul{
@@ -79,11 +85,56 @@ li{
 input,label{
     width: 100%;
 }
+
+.pageRight-column .text{
+    max-width: 60ch;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.pageRight-column > :not(form), form > :not(fieldset){ /* everything thats not the form or fieldset, move it from the left by a little*/
+    margin-left: 2rem;
+}
+
+button{
+    margin-top: 1.5rem;
+    background: #596D48;
+    border: none;
+    color: white;
+    border-radius: 0.4rem;
+    padding: 1rem 2rem 1rem 2rem; /*top right bottom left, clock rotation*/
+    font-size: 1rem;
+    box-shadow: 3px 3px 7px #B4B4B8;
+}
+
+button:hover{
+    background: #80AF81;
+}
+
+label{
+    font-size: 0.8rem;
+}
+input{
+    height: 2rem;
+    border-radius: 0.4rem;
+    border: 0.1rem solid #DDDDDD;
+}
+a{
+    color: #596D48;
+    text-decoration: none;
+}
+
 /*? flexbox */
 
 body{
     display: flex;
     flex-direction: row;
+}
+
+.pageRight-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .image-row{
@@ -105,3 +156,4 @@ ul{
     flex-direction: row;
     gap: 3rem;
 }
+
